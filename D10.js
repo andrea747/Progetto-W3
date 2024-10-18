@@ -424,9 +424,24 @@ console.log(foundMovies);
   Scrivi una funzione per selezionare l'elemento dotato di id "container" all'interno della pagina.
 */
 
+function selectContainer() {
+  const container = document.getElementById("container");
+  return container; // Ritorna l'elemento con ID "container"
+}
+
+const myContainer = selectContainer();
+console.log(myContainer);
+
 /* ESERCIZIO 21
   Scrivi una funzione per selezionare ogni tag <td> all'interno della pagina.
 */
+
+function selectAllTd() {
+  const selectTd = document.querySelectorAll("td");
+  return selectTd;
+}
+const allTd = selectAllTd();
+console.log(allTd);
 
 /* ESERCIZIO 22
   Scrivi una funzione che, tramite un ciclo, stampa in console il testo contenuto in ogni tag <td> all'interno della pagina.
